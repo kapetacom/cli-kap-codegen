@@ -1,0 +1,26 @@
+{
+  "name": "@blockware/blockctl-command-codegen",
+  "command": "test",
+  "version": "0.0.1",
+  "description": "Command for generating code from blockware YML files",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockwarecom/blockctl-command-codegen.git"
+  },
+  "author": "Henrik Hofmeister <hh@blockware.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blockwarecom/blockctl-command-codegen/issues"
+  },
+  "homepage": "https://github.com/blockwarecom/blockctl-command-codegen#readme",
+  "dependencies": {
+    "@blockware/blockctl-command": "0.0.1",
+    "@blockware/codegen": "0.0.4",
+    "@blockware/codegen-target-java8-springboot2": "0.0.1",
+    "@blockware/codegen-target-nodejs9": "1.0.0",
+    "glob": "7.1.4",
+    "mkdirp": "0.5.1",
+    "yaml": "1.6.0"
+  }
+}
