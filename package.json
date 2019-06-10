@@ -17,7 +17,7 @@
   "dependencies": {
     "@blockware/blockctl-command": "0.0.1",
     "@blockware/codegen": "0.0.4",
-    "@blockware/codegen-target-java8-springboot2": "0.0.3",
+    "@blockware/codegen-target-java8-springboot2": "0.0.4",
     "@blockware/codegen-target-nodejs9": "0.0.1",
     "glob": "7.1.4",
     "mkdirp": "0.5.1",
