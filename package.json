@@ -1,7 +1,7 @@
 {
   "name": "@blockware/blockctl-command-codegen",
   "command": "codegen",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Command for generating code from blockware YML files",
   "main": "index.js",
   "repository": {
@@ -16,9 +16,9 @@
   "homepage": "https://github.com/blockwarecom/blockctl-command-codegen#readme",
   "dependencies": {
     "@blockware/blockctl-command": "0.0.1",
-    "@blockware/codegen": "0.0.7",
-    "@blockware/codegen-target-java8-springboot2": "0.0.13",
-    "@blockware/codegen-target-nodejs9": "0.0.10",
+    "@blockware/codegen": "0.0.8",
+    "@blockware/codegen-target-java8-springboot2": "0.0.15",
+    "@blockware/codegen-target-nodejs9": "0.0.12",
     "glob": "7.1.4",
     "mkdirp": "0.5.1",
     "yaml": "1.6.0"
