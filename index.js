@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
 const BlockwareCommand = require('@blockware/blockctl-command');
-const packageData = require('./package');
+const ClusterConfiguration = require('@blockware/local-cluster-config');
 const {registry:Targets} = require('@blockware/codegen');
+const packageData = require('./package');
 
-//Hardcoded for now
-Targets.register('targets.blockware.com/v1/java8-springboot2',
-    require('@blockware/codegen-target-java8-springboot2'));
+const providerDir = ClusterConfiguration.getProvidersBasedir();
 
-Targets.register('targets.blockware.com/v1/nodejs9',
-    require('@blockware/codegen-target-nodejs9'));
+console.log('Loading language targets from %s', providerDir);
+Targets.load(providerDir);
+console.log('Language targets loaded\n');
 
 const command = new BlockwareCommand('codegen', packageData.version);
 command.program()

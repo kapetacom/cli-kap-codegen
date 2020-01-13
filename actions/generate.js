@@ -4,7 +4,7 @@ const {BlockCodeGenerator, CodeWriter} = require('@blockware/codegen');
 const glob = require('glob');
 const YAML = require('yaml');
 
-const BW_PREFIX = 'core.blockware.com/v1/Block'.toLowerCase();
+const BW_PREFIX = 'blocks.blockware.com/v1'.toLowerCase();
 
 function readYamlFile(file) {
     const content = YAML.parse(FS.readFileSync(file).toString());
