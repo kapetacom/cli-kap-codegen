@@ -16,8 +16,8 @@
   "homepage": "https://github.com/blockwarecom/blockctl-command-codegen#readme",
   "dependencies": {
     "@blockware/blockctl-command": "0.0.1",
-    "@blockware/local-cluster-config": "0.0.4",
-    "@blockware/codegen": "0.0.11",
+    "@blockware/local-cluster-config": "0.0.5",
+    "@blockware/codegen": "0.0.12",
     "glob": "7.1.4",
     "mkdirp": "0.5.1",
     "yaml": "1.6.0"

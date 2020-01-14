@@ -7,9 +7,7 @@ const packageData = require('./package');
 
 const providerDir = ClusterConfiguration.getProvidersBasedir();
 
-console.log('Loading language targets from %s', providerDir);
 Targets.load(providerDir);
-console.log('Language targets loaded\n');
 
 const command = new BlockwareCommand('codegen', packageData.version);
 command.program()
