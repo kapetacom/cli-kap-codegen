@@ -5,10 +5,10 @@ const ClusterConfiguration = require('@blockware/local-cluster-config');
 const {registry:Targets} = require('@blockware/codegen');
 const packageData = require('./package');
 
-const TARGET_KIND = 'core.blockware.com/v1/LanguageTarget';
+const TARGET_KIND = 'core/language-target';
 const languageTargets = ClusterConfiguration.getProviderDefinitions(TARGET_KIND);
 languageTargets.forEach((languageTarget) => {
-    Targets.register(languageTarget.definition.metadata.id, require(languageTarget.path));
+    Targets.register(languageTarget.definition.metadata.name, require(languageTarget.path));
 });
 
 
