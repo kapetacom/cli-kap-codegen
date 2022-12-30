@@ -8,7 +8,8 @@ const packageData = require('./package');
 const TARGET_KIND = 'core/language-target';
 const languageTargets = ClusterConfiguration.getProviderDefinitions(TARGET_KIND);
 languageTargets.forEach((languageTarget) => {
-    Targets.register(languageTarget.definition.metadata.name, require(languageTarget.path));
+    const key = `${languageTarget.definition.metadata.name}:${languageTarget.version}`;
+    Targets.register(key, require(languageTarget.path));
 });
 
 
