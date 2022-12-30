@@ -1,7 +1,7 @@
 {
   "name": "@blockware/blockctl-command-codegen",
   "command": "codegen",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "Command for generating code from blockware YML files",
   "main": "index.js",
   "repository": {
@@ -15,9 +15,9 @@
   },
   "homepage": "https://github.com/blockwarecom/blockctl-command-codegen#readme",
   "dependencies": {
-    "@blockware/blockctl-command": "0.0.1",
-    "@blockware/local-cluster-config": "0.0.6",
-    "@blockware/codegen": "0.0.12",
+    "@blockware/blockctl-command": "<2",
+    "@blockware/local-cluster-config": "<2",
+    "@blockware/codegen": "<2",
     "glob": "7.1.4",
     "mkdirp": "0.5.1",
     "yaml": "1.6.0"
