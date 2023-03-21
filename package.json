@@ -1,23 +1,23 @@
 {
-  "name": "@blockware/blockctl-command-codegen",
+  "name": "@kapeta/blockctl-command-codegen",
   "command": "codegen",
-  "version": "0.0.32",
-  "description": "Command for generating code from blockware YML files",
+  "version": "0.0.33",
+  "description": "Command for generating code from kapeta YML files",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/blockwarecom/blockctl-command-codegen.git"
   },
-  "author": "Henrik Hofmeister <hh@blockware.com>",
+  "author": "Henrik Hofmeister <hh@kapeta.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/blockwarecom/blockctl-command-codegen/issues"
   },
   "homepage": "https://github.com/blockwarecom/blockctl-command-codegen#readme",
   "dependencies": {
-    "@blockware/blockctl-command": "<2",
-    "@blockware/local-cluster-config": "<2",
-    "@blockware/codegen": "<2",
+    "@kapeta/blockctl-command": "<2",
+    "@kapeta/local-cluster-config": "<2",
+    "@kapeta/codegen": "<2",
     "glob": "7.1.4",
     "mkdirp": "0.5.1",
     "yaml": "1.6.0"

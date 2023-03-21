@@ -1,10 +1,10 @@
 const FS = require('fs');
 const Path = require('path');
-const {BlockCodeGenerator, CodeWriter} = require('@blockware/codegen');
+const {BlockCodeGenerator, CodeWriter} = require('@kapeta/codegen');
 const glob = require('glob');
 const YAML = require('yaml');
 
-const BW_PREFIX = 'blockware/block-type-';
+const BW_PREFIX = 'kapeta/block-type-';
 
 function readYamlFile(file) {
     const content = YAML.parse(FS.readFileSync(file).toString());

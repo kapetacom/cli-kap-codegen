@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const BlockwareCommand = require('@blockware/blockctl-command');
-const ClusterConfiguration = require('@blockware/local-cluster-config');
-const {registry:Targets} = require('@blockware/codegen');
+const KapetaCommand = require('@kapeta/blockctl-command');
+const ClusterConfiguration = require('@kapeta/local-cluster-config');
+const {registry:Targets} = require('@kapeta/codegen');
 const packageData = require('./package');
 
 const TARGET_KIND = 'core/language-target';
@@ -13,7 +13,7 @@ languageTargets.forEach((languageTarget) => {
 });
 
 
-const command = new BlockwareCommand('codegen', packageData.version);
+const command = new KapetaCommand('codegen', packageData.version);
 command.program()
     .command('generate <path>')
     .action(require('./actions/generate'));
