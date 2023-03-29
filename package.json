@@ -6,14 +6,14 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blockwarecom/blockctl-command-codegen.git"
+    "url": "git+https://github.com/kapetacom/blockctl-command-codegen.git"
   },
   "author": "Henrik Hofmeister <hh@kapeta.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/blockwarecom/blockctl-command-codegen/issues"
+    "url": "https://github.com/kapetacom/blockctl-command-codegen/issues"
   },
-  "homepage": "https://github.com/blockwarecom/blockctl-command-codegen#readme",
+  "homepage": "https://github.com/kapetacom/blockctl-command-codegen#readme",
   "dependencies": {
     "@kapeta/blockctl-command": "<2",
     "@kapeta/local-cluster-config": "<2",
