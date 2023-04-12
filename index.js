@@ -9,7 +9,13 @@ const TARGET_KIND = 'core/language-target';
 const languageTargets = ClusterConfiguration.getProviderDefinitions(TARGET_KIND);
 languageTargets.forEach((languageTarget) => {
     const key = `${languageTarget.definition.metadata.name}:${languageTarget.version}`;
-    Targets.register(key, require(languageTarget.path));
+    const target = require(languageTarget.path);
+    if (target.default) {
+        Targets.register(key, target.default);
+    } else {
+        Targets.register(key, target);
+    }
+
 });
 
 
