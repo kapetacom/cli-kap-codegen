@@ -64,7 +64,9 @@ module.exports = async function(path) {
 
             const writer = new CodeWriter(baseDir);
 
-            writer.write(output);
+            const changedFiles = writer.write(output);
+
+            await codeGenerator.postprocess(changedFiles);
 
             console.log('Code was generated for block: %s\n\n', block.filename);
         } catch(err) {
