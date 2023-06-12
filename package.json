@@ -1,5 +1,5 @@
 {
-  "name": "@kapeta/cli-kap-codegen",
+  "name": "@kapeta/kap-codegen",
   "command": "codegen",
   "version": "0.0.40",
   "description": "Command for generating code from kapeta YML files",
