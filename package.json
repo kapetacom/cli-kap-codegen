@@ -4,6 +4,10 @@
   "version": "0.0.40",
   "description": "Command for generating code from kapeta YML files",
   "main": "index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kapetacom/cli-kap-codegen.git"
