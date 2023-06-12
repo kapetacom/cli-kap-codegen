@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@kapeta/kap-command": "<2",
-    "@kapeta/local-cluster-config": "<2",
+    "@kapeta/local-cluster-config": ">= 0.2.3 <2",
     "@kapeta/codegen": "<2",
     "glob": "7.1.4",
     "mkdirp": "0.5.1",
