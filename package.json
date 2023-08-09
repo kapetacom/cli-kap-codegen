@@ -50,6 +50,7 @@
     "mkdirp": "0.5.1",
     "yaml": "1.6.0"
   },
+  "bundledDependencies": true,
   "devDependencies": {
     "@types/node": "^18.16.0",
     "pkg": "^5.8.1"
