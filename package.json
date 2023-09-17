@@ -1,58 +1,72 @@
 {
-  "name": "@kapeta/kap-codegen",
-  "command": "codegen",
-  "version": "0.0.40",
-  "description": "Command for generating code from kapeta YML files",
-  "main": "index.js",
-  "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kapetacom/cli-kap-codegen.git"
-  },
-  "author": "Henrik Hofmeister <hh@kapeta.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kapetacom/cli-kap-codegen/issues"
-  },
-  "homepage": "https://github.com/kapetacom/cli-kap-codegen#readme",
-  "scripts": {
-    "build-binary": "pkg package.json"
-  },
-  "bin": {
-    "codegen": "codegen.js"
-  },
-  "pkg": {
-    "scripts": [
-      "codegen.js"
+    "name": "@kapeta/kap-codegen",
+    "command": "codegen",
+    "version": "0.0.40",
+    "description": "Command for generating code from kapeta YML files",
+    "main": "index.js",
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kapetacom/cli-kap-codegen.git"
+    },
+    "author": "Henrik Hofmeister <hh@kapeta.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kapetacom/cli-kap-codegen/issues"
+    },
+    "homepage": "https://github.com/kapetacom/cli-kap-codegen#readme",
+    "scripts": {
+        "build-binary": "pkg package.json",
+        "format": "prettier --write ."
+    },
+    "bin": {
+        "codegen": "codegen.js"
+    },
+    "pkg": {
+        "scripts": [
+            "codegen.js"
+        ],
+        "targets": [
+            "node18-alpine-x64",
+            "node18-alpine-arm64",
+            "node18-linux-x64",
+            "node18-linux-arm64",
+            "node18-linuxstatic-x64",
+            "node18-linuxstatic-arm64",
+            "node18-macos-x64",
+            "node18-macos-arm64",
+            "node18-win-x64",
+            "node18-win-arm64"
+        ],
+        "outputPath": "dist"
+    },
+    "dependencies": {
+        "@kapeta/codegen": "<2",
+        "@kapeta/kap-command": "<2",
+        "@kapeta/local-cluster-config": ">= 0.2.3 <2",
+        "@kapeta/nodejs-utils": "^0.0.12",
+        "glob": "7.1.4",
+        "mkdirp": "0.5.1",
+        "yaml": "1.6.0"
+    },
+    "bundledDependencies": true,
+    "devDependencies": {
+        "@types/node": "^18.16.0",
+        "pkg": "^5.8.1",
+        "@kapeta/prettier-config": "^0.6.0",
+        "prettier": "^2.8.8"
+    },
+    "bundleDependencies": [
+        "@kapeta/kap-command",
+        "@kapeta/local-cluster-config",
+        "@kapeta/nodejs-utils",
+        "@kapeta/codegen",
+        "glob",
+        "mkdirp",
+        "yaml"
     ],
-    "targets": [
-      "node18-alpine-x64",
-      "node18-alpine-arm64",
-      "node18-linux-x64",
-      "node18-linux-arm64",
-      "node18-linuxstatic-x64",
-      "node18-linuxstatic-arm64",
-      "node18-macos-x64",
-      "node18-macos-arm64",
-      "node18-win-x64",
-      "node18-win-arm64"
-    ],
-    "outputPath": "dist"
-  },
-  "dependencies": {
-    "@kapeta/kap-command": "<2",
-    "@kapeta/local-cluster-config": ">= 0.2.3 <2",
-    "@kapeta/codegen": "<2",
-    "glob": "7.1.4",
-    "mkdirp": "0.5.1",
-    "yaml": "1.6.0"
-  },
-  "bundledDependencies": true,
-  "devDependencies": {
-    "@types/node": "^18.16.0",
-    "pkg": "^5.8.1"
-  }
+    "prettier": "@kapeta/prettier-config"
 }
