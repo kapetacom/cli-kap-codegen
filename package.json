@@ -12,8 +12,12 @@
         "type": "git",
         "url": "git+https://github.com/kapetacom/cli-kap-codegen.git"
     },
-    "author": "Henrik Hofmeister <hh@kapeta.com>",
     "license": "MIT",
+    "author": {
+        "email": "engineering@kapeta.com",
+        "name": "Kapeta",
+        "url": "https://kapeta.com"
+    },
     "bugs": {
         "url": "https://github.com/kapetacom/cli-kap-codegen/issues"
     },
