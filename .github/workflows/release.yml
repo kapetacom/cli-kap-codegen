@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - uses: actions/setup-node@v3
-      - run: npm i --ignore-scripts --omit=dev
+      - run: npm i --ignore-scripts
       - run: npm run build
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v3
