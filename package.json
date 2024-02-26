@@ -1,7 +1,7 @@
 {
     "name": "@kapeta/kap-codegen",
     "command": "codegen",
-    "version": "0.0.43",
+    "version": "0.0.44",
     "description": "Command for generating code from kapeta YML files",
     "main": "dist/index.js",
     "private": false,
@@ -47,7 +47,7 @@
             "node18-win-x64",
             "node18-win-arm64"
         ],
-        "outputPath": "dist"
+        "outputPath": "dist/binaries"
     },
     "dependencies": {
         "@kapeta/codegen": "<2",
