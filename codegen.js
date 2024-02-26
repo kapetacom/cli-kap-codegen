@@ -5,4 +5,4 @@
 
 // Temp file because blockctl only regards index.js instead of package.main
 
-require("./dist/index");
+require("./dist/src/index");
