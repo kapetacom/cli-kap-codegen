@@ -3,7 +3,7 @@
     "command": "codegen",
     "version": "0.0.40",
     "description": "Command for generating code from kapeta YML files",
-    "main": "index.js",
+    "main": "dist/index.js",
     "private": false,
     "publishConfig": {
         "access": "public"
@@ -23,8 +23,10 @@
     },
     "homepage": "https://github.com/kapetacom/cli-kap-codegen#readme",
     "scripts": {
-        "build-binary": "pkg package.json",
-        "format": "prettier --write ."
+        "build-binary": "npm run build && pkg package.json",
+        "format": "prettier --write .",
+        "test": "jest",
+        "build": "tsc"
     },
     "bin": {
         "codegen": "codegen.js"
@@ -52,16 +54,21 @@
         "@kapeta/kap-command": "<2",
         "@kapeta/local-cluster-config": ">= 0.2.3 <2",
         "@kapeta/nodejs-utils": "^0.0.12",
+        "@kapeta/schemas": "3.3.0",
         "glob": "7.1.4",
         "mkdirp": "0.5.1",
-        "yaml": "1.6.0"
+        "yaml": "2.3.4"
     },
-    "bundledDependencies": true,
     "devDependencies": {
-        "@types/node": "^18.16.0",
-        "pkg": "^5.8.1",
+        "@babel/preset-typescript": "^7.23.3",
         "@kapeta/prettier-config": "^0.6.0",
-        "prettier": "^2.8.8"
+        "@types/glob": "^8.1.0",
+        "@types/jest": "^29.5.12",
+        "@types/node": "^18.16.0",
+        "jest": "29.7.0",
+        "pkg": "^5.8.1",
+        "prettier": "^2.8.8",
+        "ts-jest": "^29.1.2"
     },
     "bundleDependencies": [
         "@kapeta/kap-command",
@@ -72,5 +79,10 @@
         "mkdirp",
         "yaml"
     ],
-    "prettier": "@kapeta/prettier-config"
+    "prettier": "@kapeta/prettier-config",
+    "files": [
+        "dist",
+        "index.js",
+        "types.d.ts"
+    ]
 }
