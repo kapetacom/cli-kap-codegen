@@ -1,7 +1,7 @@
 {
     "name": "@kapeta/kap-codegen",
     "command": "codegen",
-    "version": "0.0.40",
+    "version": "0.0.41",
     "description": "Command for generating code from kapeta YML files",
     "main": "dist/index.js",
     "private": false,
@@ -65,6 +65,7 @@
         "@types/glob": "^8.1.0",
         "@types/jest": "^29.5.12",
         "@types/node": "^18.16.0",
+        "@tsconfig/node18": "^18.2.2",
         "jest": "29.7.0",
         "pkg": "^5.8.1",
         "prettier": "^2.8.8",
