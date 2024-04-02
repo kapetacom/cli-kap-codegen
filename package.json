@@ -54,7 +54,7 @@
         "@kapeta/kap-command": "<2",
         "@kapeta/local-cluster-config": ">= 0.2.3 <2",
         "@kapeta/nodejs-utils": "^0.0.12",
-        "@kapeta/schemas": "3.3.0",
+        "@kapeta/schemas": "3.5.0",
         "glob": "7.2.3",
         "mkdirp": "0.5.6",
         "yaml": "2.3.4"
