@@ -56,7 +56,7 @@
         "@kapeta/nodejs-utils": "^0.0.12",
         "@kapeta/schemas": "3.3.0",
         "glob": "7.1.4",
-        "mkdirp": "0.5.1",
+        "mkdirp": "0.5.6",
         "yaml": "2.3.4"
     },
     "devDependencies": {
