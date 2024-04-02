@@ -1,4 +1,4 @@
-name: Publish to Kapeta Public NPM
+name: PR Check
 on: [pull_request]
 
 jobs:
